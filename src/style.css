@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Fraunces', serif;
+    min-height: 100vh;
+}
+
+.container {
+    width: 30%;
+    color: #fff;
+    margin: 3rem auto;
+    position: relative;
+}
+
+.sign-up_head {
+    text-align: center;
+    cursor: pointer;
+}
+
+fieldset {
+    margin: 1rem 0;
+    border: 0;
+}
+
+.inputs input {
+    display: block;
+    width: 100%;
+    padding: .7rem;
+    border-radius: 4px;
+    outline: 0;
+    border: 1px solid rgb(40, 40, 147);
+    margin-bottom: 1rem;
+}
+input:focus{
+    outline: 1px solid navy;
+}
+fieldset a {
+    color: #3434d3;
+}
+
+button {
+    cursor: pointer;
+    padding: .7rem;
+    border: 0;
+    background-color: #3636b8;
+    color: #fff;
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    margin: 1rem 0;
+    font-weight: 600;
+}
+
+.sign-up,
+.login {
+    padding: 1.5em 1em;
+}
+
+.sign-up {
+    background-color: navy;
+    border-radius: 7px;
+    height: 400px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+
+}
+
+.login {
+    background-color: #fff;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    color: navy;
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    transition: 400ms ease;
+}
+
+.close {
+    display: none;
+}
+
+/* js class */
+.show {
+    display: block;
+}
+
+.move-up {
+    top: 15%
+}
+
+@media only screen and (max-width: 820px) {
+    .container {
+        width: 90%;
+    }
+}
